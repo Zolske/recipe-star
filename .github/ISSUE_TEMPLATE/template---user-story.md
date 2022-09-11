@@ -7,9 +7,9 @@ assignees: Zolske
 
 ---
 
-**As a user I can**<br>
+**As a user I can ...**<br>
 **<br>
-**so that I can**<br>
+**so that I can ...**<br>
 **.<br>
 ***
 ## tasks:<br>
