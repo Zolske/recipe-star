@@ -29,7 +29,7 @@
   | --- | :----: | :----: | :----: |
   | endpoint | "/dj-rest-auth/registration/" | "/dj-rest-auth/login/" | "/dj-rest-auth/logout/" |
   | expected value | username password1 password2 | username password |
-  | | user GET | refresh token POST | change password POST |
+  | | **user <br> GET** | **refresh token <br> POST** | **change password <br> POST** |
   | endpoint | "/dj-rest-auth/logout/" | "/dj-rest-auth/token/refresh/" | "/dj-rest-auth/password/change/" |
   | expected value | | refresh token | new_password1 new_password2 |
   
