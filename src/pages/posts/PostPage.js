@@ -29,8 +29,10 @@ function PostPage() {
     const handleMount = async () => {
       try {
         const [{ data: post }, { data: comments }] = await Promise.all([
-          axiosReq.get(`/posts/${id}`),
-          axiosReq.get(`/comments/?post=${id}`),
+          // DELETE axiosReq.get(`/posts/${id}`),
+          // DELETE axiosReq.get(`/comments/?post=${id}`),
+          axiosReq.get(`/recipes/${id}`),
+          axiosReq.get(`/comments/?recipe=${id}`),
         ]);
         setPost({ results: [post] });
         setComments(comments);
@@ -45,7 +47,7 @@ function PostPage() {
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles for mobile</p>
+        {/* <p>Popular profiles for mobile</p> */}
         <Post {...post.results[0]} setPosts={setPost} postPage />
         <Container className={appStyles.Content}>
           {currentUser ? (
@@ -82,7 +84,7 @@ function PostPage() {
         </Container>
       </Col>
       <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
-        Popular profiles for desktop
+        {/* Popular profiles for desktop */}
       </Col>
     </Row>
   );

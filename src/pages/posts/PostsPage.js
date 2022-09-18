@@ -31,7 +31,8 @@ function PostsPage({ message, filter = "" }) {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
+        // DELETE const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
+        const { data } = await axiosReq.get(`/recipes/?${filter}search=${query}`);
         setPosts(data);
         setHasLoaded(true);
       } catch (err) {
