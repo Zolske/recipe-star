@@ -1,6 +1,8 @@
-import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/images/logo/logo_star_all_long.webp";
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 import {
@@ -24,7 +26,6 @@ const NavBar = () => {
       setCurrentUser(null);
       removeTokenTimestamp();
     } catch (err) {
-      console.log(err);
     }
   };
 
