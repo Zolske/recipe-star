@@ -72,23 +72,32 @@ const Post = (props) => {
       console.log(err);
     }
   };
-
+  
   return (
     <Card className={styles.Post}>
       <Card.Body>
+      {title && <Card.Title className="text-center">{title}</Card.Title>}
         <Media className="align-items-center justify-content-between">
           <Link to={`/profiles/${profile_id}`}>
+            <span className={styles.cursive_explanation}>posted by</span>
             <Avatar src={profile_image} height={55} />
             {owner}
           </Link>
           <div className="d-flex align-items-center">
+          <span className={styles.cursive_explanation}>updated on&nbsp;</span>
             <span>{updated_at}</span>
-            {is_owner && postPage && (
+            {/* {is_owner && postPage && (
               <MoreDropdown
                 handleEdit={handleEdit}
                 handleDelete={handleDelete}
               />
-            )}
+            )} */}
+            {is_owner && (
+              <MoreDropdown
+              handleEdit={handleEdit}
+              handleDelete={handleDelete}
+              />
+              )}
           </div>
         </Media>
       </Card.Body>
@@ -96,7 +105,6 @@ const Post = (props) => {
         <Card.Img src={image} alt={title} />
       </Link>
       <Card.Body>
-        {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
         <div className={styles.PostBar}>
           {is_owner ? (
@@ -124,7 +132,12 @@ const Post = (props) => {
           )}
           {likes_count}
           <Link to={`/posts/${id}`}>
+          <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Write a comment!</Tooltip>}
+            >
             <i className="far fa-comments" />
+            </OverlayTrigger>
           </Link>
           {comments_count}
         </div>
