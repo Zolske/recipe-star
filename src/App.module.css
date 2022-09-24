@@ -4,7 +4,7 @@
     --hover-color-icons: #796F85;
     --hover-color-buttons: #50C9CE;
     --text-color: #475371;
-  }
+}
 
 
 .App {
@@ -17,7 +17,8 @@
     padding-top: 150px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Emilys Candy', cursive;
 }
 
@@ -95,4 +96,9 @@ figure {
 
 *::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.text_center {
+    display: block;
+    text-align: center;
 }

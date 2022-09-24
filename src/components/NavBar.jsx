@@ -98,12 +98,11 @@ const NavBar = () => {
           </Navbar.Brand>
         </NavLink>
         <h1>Recipe Star</h1>
-        {currentUser && addPostIcon}
         <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
           aria-controls="basic-navbar-nav"
-        />
+          />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
             <NavLink
@@ -111,9 +110,10 @@ const NavBar = () => {
               className={styles.NavLink}
               activeClassName={styles.Active}
               to="/"
-            >
+              >
               <i className="fas fa-home"></i>Home
             </NavLink>
+              {currentUser && addPostIcon}
 
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>

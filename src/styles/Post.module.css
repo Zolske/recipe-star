@@ -23,6 +23,21 @@ h5 {
   color: #f85032;
 }
 
+.recipe_title {
+  font-family: 'Emilys Candy', cursive;
+  font-size: xx-large;
+}
+
+.recipe_title::after {
+  content: url("../assets/images/logo/logo_star_bullet.webp");
+  margin: 0.5ch;
+}
+
+.recipe_title::before {
+  content: url("../assets/images/logo/logo_star_bullet.webp");
+  margin: 0.5ch;
+}
+
 .cursive_explanation {
   font-style: italic;
 }
@@ -33,4 +48,9 @@ h5 {
 
 .cooking_instructions {
   font-style: italic;
+}
+
+.ingredients_list {
+  /* list-style-position: inside; */
+  list-style: square inside url("../assets/images/logo/logo_star_bullet.webp");
 }

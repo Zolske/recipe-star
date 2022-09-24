@@ -1,5 +1,6 @@
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
+import FooterBar from "./components/FooterBar";
 import Container from "react-bootstrap/Container";
 import { Route, Switch } from "react-router-dom";
 import "./api/axiosDefaults";
@@ -77,6 +78,7 @@ function App() {
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
+      <FooterBar />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
+import logo from "../../assets/images/logo/logo_star_bullet.webp";
 
 const Post = (props) => {
   const {
@@ -79,7 +80,7 @@ const Post = (props) => {
   return (
     <Card className={styles.Post}>
       <Card.Body>
-        {title && <Card.Title className="text-center">{title}</Card.Title>}
+        {title && <Card.Title className={styles.recipe_title}>{title}</Card.Title>}
         <Media className="align-items-center justify-content-between">
           <Link to={`/profiles/${profile_id}`}>
             <span className={styles.cursive_explanation}>posted by</span>
@@ -110,15 +111,15 @@ const Post = (props) => {
       <Card.Body>
         <hr></hr>
         <details><summary className={styles.summary_title}>ingredients list:</summary>
-          <ul>
-            {ingredientsArray.map((ingredient) => {
-              return <li key={ingredient}>{ingredient}</li>
-            })}
-          </ul>
+            <ul className={styles.ingredients_list}>
+              {ingredientsArray.map((ingredient) => {
+                return <li key={ingredient}>{ingredient}</li>
+              })}
+            </ul>
         </details>
         <hr></hr>
         <details><summary className={styles.summary_title}>cooking instructions:</summary>
-        {content && <Card.Text className={styles.cooking_instructions}>{content}</Card.Text>}
+          {content && <Card.Text className={styles.cooking_instructions}>{content}</Card.Text>}
         </details>
         <hr></hr>
         <div className={styles.PostBar}>
@@ -145,7 +146,7 @@ const Post = (props) => {
               <i className="far fa-heart" />
             </OverlayTrigger>
           )}
-          {likes_count}
+          {/* {likes_count} not working bring back later ?*/}
           <Link to={`/posts/${id}`}>
             <OverlayTrigger
               placement="top"
@@ -154,7 +155,7 @@ const Post = (props) => {
               <i className="far fa-comments" />
             </OverlayTrigger>
           </Link>
-          {comments_count}
+          {/* {comments_count} not working bring back later ?*/}
         </div>
       </Card.Body>
     </Card>

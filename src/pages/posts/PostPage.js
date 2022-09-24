@@ -78,9 +78,9 @@ function PostPage() {
               next={() => fetchMoreData(comments, setComments)}
             />
           ) : currentUser ? (
-            <span>No comments yet, be the first to comment!</span>
+            <span className={appStyles.text_center}>No comments yet, be the first to comment!</span>
           ) : (
-            <span>No comments... yet</span>
+            <span className={appStyles.text_center}>No comments... yet</span>
           )}
         </Container>
       </Col>
