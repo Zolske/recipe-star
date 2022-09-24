@@ -37,7 +37,7 @@ function PostPage() {
         setPost({ results: [post] });
         setComments(comments);
       } catch (err) {
-        // console.log(err);
+        //console.log(err);
       }
     };
 
@@ -54,7 +54,8 @@ function PostPage() {
             <CommentCreateForm
               profile_id={currentUser.profile_id}
               profileImage={profile_image}
-              post={id}
+              // post={id}
+              recipe={id}
               setPost={setPost}
               setComments={setComments}
             />

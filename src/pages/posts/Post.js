@@ -51,7 +51,6 @@ const Post = (props) => {
         ...prevPosts,
         results: prevPosts.results.map((post) => {
           return post.id === id
-            // return true
             ? { ...post, likes_count: post.likes_count + 1, like_id: data.id }
             : post;
         }),
