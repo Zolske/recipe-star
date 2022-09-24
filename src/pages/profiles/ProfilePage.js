@@ -115,7 +115,7 @@ function ProfilePage() {
   const mainProfilePosts = (
     <>
       <hr />
-      <p className="text-center">{profile?.owner}'s posted recipes</p>
+      <h3 className="text-center">{profile?.owner}'s posted recipes ... </h3>
       <hr />
       {profilePosts.results.length ? (
         <InfiniteScroll
@@ -139,6 +139,8 @@ function ProfilePage() {
   return (
     <Row>
       <Col className="py-2 p-0 p-lg-2" lg={8}>
+        <h2>Profile Page:</h2>
+        <p>Hire you can update your profile, change your username and password.</p>
         <PopularProfiles mobile />
         <Container className={appStyles.Content}>
           {hasLoaded ? (

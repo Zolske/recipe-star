@@ -48,10 +48,13 @@ const SignUpForm = () => {
   };
 
   return (
+    <div>
+      <h2>Welcome To The Sign-up Page.</h2>
+      <p>Hire you can sign-up for a free account from which you can post recipes.</p>
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>sign up</h1>
+          <h3 className={styles.Header}>sign up</h3>
 
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
@@ -131,10 +134,11 @@ const SignUpForm = () => {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
+          src={"https://res.cloudinary.com/diwuglogr/image/upload/v1664031658/recipe-star-3-api/katie-moum-7XGtYefMXiQ-unsplash_sbluwu.jpg"}
         />
       </Col>
     </Row>
+  </div>
   );
 };
 

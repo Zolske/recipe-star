@@ -52,6 +52,8 @@ function PostsPage({ message, filter = "" }) {
 
   return (
     <Row className="h-100">
+      <h2>Welcome to the "Recipe Star" !</h2>
+      <p>The recipe star is a site where user can share favorite recipes.<br/>Signed-in user can share, like, comment on recipes and follow other users.</p>
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
         <i className={`fas fa-search ${styles.SearchIcon}`} />
@@ -64,7 +66,7 @@ function PostsPage({ message, filter = "" }) {
             onChange={(event) => setQuery(event.target.value)}
             type="text"
             className="mr-sm-2"
-            placeholder="Search posts"
+            placeholder="Search recipes by title and or author."
           />
         </Form>
 

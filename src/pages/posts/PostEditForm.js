@@ -20,10 +20,11 @@ function PostEditForm() {
 
   const [postData, setPostData] = useState({
     title: "",
+    ingredients: "",
     content: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, ingredients, content, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -34,9 +35,9 @@ function PostEditForm() {
       try {
         // DELETE const { data } = await axiosReq.get(`/posts/${id}/`);
         const { data } = await axiosReq.get(`/recipes/${id}/`);
-        const { title, content, image, is_owner } = data;
+        const { title, ingredients, content, image, is_owner } = data;
 
-        is_owner ? setPostData({ title, content, image }) : history.push("/");
+        is_owner ? setPostData({ title, ingredients, content, image }) : history.push("/");
       } catch (err) {
         // console.log(err);
       }
@@ -67,6 +68,7 @@ function PostEditForm() {
     const formData = new FormData();
 
     formData.append("title", title);
+    formData.append("ingredients", ingredients);
     formData.append("content", content);
 
     if (imageInput?.current?.files[0]) {
@@ -75,7 +77,7 @@ function PostEditForm() {
 
     try {
       // DELETE await axiosReq.put(`/posts/${id}/`, formData);
-       history.push(`/posts/${id}`);
+      history.push(`/posts/${id}`);
       await axiosReq.put(`/recipes/${id}/`, formData);
       // history.push(`/recipes/${id}`);
     } catch (err) {
@@ -98,6 +100,22 @@ function PostEditForm() {
         />
       </Form.Group>
       {errors?.title?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
+      <Form.Group>
+        <Form.Label>What ingredients do you need:</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="ingredients"
+          value={ingredients}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.ingredients?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>

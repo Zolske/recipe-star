@@ -97,6 +97,7 @@ const NavBar = () => {
             <img src={logo} alt="logo" height="45" />
           </Navbar.Brand>
         </NavLink>
+        <h1>Recipe Star</h1>
         {currentUser && addPostIcon}
         <Navbar.Toggle
           ref={ref}

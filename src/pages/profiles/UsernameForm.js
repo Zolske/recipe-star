@@ -55,10 +55,11 @@ const UsernameForm = () => {
   return (
     <Row>
       <Col className="py-2 mx-auto text-center" md={6}>
+        <h2>Change username:</h2>
         <Container className={appStyles.Content}>
           <Form onSubmit={handleSubmit} className="my-2">
             <Form.Group>
-              <Form.Label>Change username</Form.Label>
+              <Form.Label>Enter new username</Form.Label>
               <Form.Control
                 placeholder="username"
                 type="text"

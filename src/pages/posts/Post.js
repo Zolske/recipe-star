@@ -17,12 +17,15 @@ const Post = (props) => {
     likes_count,
     like_id,
     title,
+    ingredients,
     content,
     image,
     updated_at,
     postPage,
     setPosts,
   } = props;
+
+  const ingredientsArray = ingredients ? ingredients.split(";") : ['no ingredients listed'];
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
@@ -43,17 +46,18 @@ const Post = (props) => {
 
   const handleLike = async () => {
     try {
-      const { data } = await axiosRes.post("/likes/", { post: id });
+      const { data } = await axiosRes.post("/likes/", { recipe: id });
       setPosts((prevPosts) => ({
         ...prevPosts,
         results: prevPosts.results.map((post) => {
           return post.id === id
+            // return true
             ? { ...post, likes_count: post.likes_count + 1, like_id: data.id }
             : post;
         }),
       }));
     } catch (err) {
-      // console.log(err);
+      console.log(err);
     }
   };
 
@@ -72,11 +76,11 @@ const Post = (props) => {
       console.log(err);
     }
   };
-  
+
   return (
     <Card className={styles.Post}>
       <Card.Body>
-      {title && <Card.Title className="text-center">{title}</Card.Title>}
+        {title && <Card.Title className="text-center">{title}</Card.Title>}
         <Media className="align-items-center justify-content-between">
           <Link to={`/profiles/${profile_id}`}>
             <span className={styles.cursive_explanation}>posted by</span>
@@ -84,7 +88,7 @@ const Post = (props) => {
             {owner}
           </Link>
           <div className="d-flex align-items-center">
-          <span className={styles.cursive_explanation}>updated on&nbsp;</span>
+            <span className={styles.cursive_explanation}>updated on&nbsp;</span>
             <span>{updated_at}</span>
             {/* {is_owner && postPage && (
               <MoreDropdown
@@ -94,10 +98,10 @@ const Post = (props) => {
             )} */}
             {is_owner && (
               <MoreDropdown
-              handleEdit={handleEdit}
-              handleDelete={handleDelete}
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
               />
-              )}
+            )}
           </div>
         </Media>
       </Card.Body>
@@ -105,7 +109,19 @@ const Post = (props) => {
         <Card.Img src={image} alt={title} />
       </Link>
       <Card.Body>
-        {content && <Card.Text>{content}</Card.Text>}
+        <hr></hr>
+        <details><summary className={styles.summary_title}>ingredients list:</summary>
+          <ul>
+            {ingredientsArray.map((ingredient) => {
+              return <li key={ingredient}>{ingredient}</li>
+            })}
+          </ul>
+        </details>
+        <hr></hr>
+        <details><summary className={styles.summary_title}>cooking instructions:</summary>
+        {content && <Card.Text className={styles.cooking_instructions}>{content}</Card.Text>}
+        </details>
+        <hr></hr>
         <div className={styles.PostBar}>
           {is_owner ? (
             <OverlayTrigger
@@ -132,11 +148,11 @@ const Post = (props) => {
           )}
           {likes_count}
           <Link to={`/posts/${id}`}>
-          <OverlayTrigger
+            <OverlayTrigger
               placement="top"
               overlay={<Tooltip>Write a comment!</Tooltip>}
             >
-            <i className="far fa-comments" />
+              <i className="far fa-comments" />
             </OverlayTrigger>
           </Link>
           {comments_count}

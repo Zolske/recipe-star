@@ -55,10 +55,11 @@ const UserPasswordForm = () => {
   return (
     <Row>
       <Col className="py-2 mx-auto text-center" md={6}>
+        <h2>Change password:</h2>
         <Container className={appStyles.Content}>
           <Form onSubmit={handleSubmit}>
             <Form.Group>
-              <Form.Label>New password</Form.Label>
+              <Form.Label>Enter new password</Form.Label>
               <Form.Control
                 placeholder="new password"
                 type="password"
@@ -73,7 +74,7 @@ const UserPasswordForm = () => {
               </Alert>
             ))}
             <Form.Group>
-              <Form.Label>Confirm password</Form.Label>
+              <Form.Label>Confirm new password</Form.Label>
               <Form.Control
                 placeholder="confirm new password"
                 type="password"

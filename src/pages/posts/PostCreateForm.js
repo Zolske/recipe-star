@@ -26,10 +26,11 @@ function PostCreateForm() {
 
   const [postData, setPostData] = useState({
     title: "",
+    ingredients: "",
     content: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, ingredients, content, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -56,6 +57,7 @@ function PostCreateForm() {
     const formData = new FormData();
 
     formData.append("title", title);
+    formData.append("ingredients", ingredients);
     formData.append("content", content);
     formData.append("image", imageInput.current.files[0]);
 
@@ -84,6 +86,22 @@ function PostCreateForm() {
         />
       </Form.Group>
       {errors?.title?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
+      <Form.Group>
+        <Form.Label>What ingredients do you need:</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="ingredients"
+          value={ingredients}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.ingredients?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
@@ -119,6 +137,8 @@ function PostCreateForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
+      <h2>Create new recipe page:</h2>
+      <p>Hire you can create a new recipe with an image, title, ingredients list and a method how to make it.</p>
       <Row>
         <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
           <Container

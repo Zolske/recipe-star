@@ -115,6 +115,8 @@ const ProfileEditForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
+      <h2>Profile edit page:</h2>
+      <p>Hir you can change your profile picture und Bio.</p>
       <Row>
         <Col className="py-2 p-0 p-md-2 text-center" md={7} lg={6}>
           <Container className={appStyles.Content}>
