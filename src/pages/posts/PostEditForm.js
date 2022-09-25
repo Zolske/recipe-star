@@ -15,6 +15,9 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
+import ingredient_list_logo from "../../assets/images/example_ingredient_list.webp";
+import method_list_logo from "../../assets/images/example_method_list.webp";
+
 function PostEditForm() {
   const [errors, setErrors] = useState({});
 
@@ -77,8 +80,8 @@ function PostEditForm() {
 
     try {
       // DELETE await axiosReq.put(`/posts/${id}/`, formData);
-      history.push(`/posts/${id}`);
       await axiosReq.put(`/recipes/${id}/`, formData);
+      history.push(`/posts/${id}`);
       // history.push(`/recipes/${id}`);
     } catch (err) {
       // console.log(err);
@@ -108,7 +111,8 @@ function PostEditForm() {
 
       <Form.Group>
         <h3>What ingredients do you need:</h3>
-        <Form.Label><span className={appStyles.text_cursive}>Please, list the ingredients needed, separated by a <strong>semicolon ;</strong> (e.g. 1 egg<strong>; </strong>0.5kg butter).</span></Form.Label>
+        <Form.Label><span className={appStyles.text_cursive}>Please, list the ingredients, separated by a <strong>semicolon ;</strong> (e.g. 1 egg<strong>; </strong>0.5kg butter).</span></Form.Label>
+        <img src={ingredient_list_logo} className="mb-1" alt="Example of how the listed ingredients will aper on post." width="160" title="Example of how the listed ingredients will aper on post."/>
         <Form.Control
           as="textarea"
           rows={6}
@@ -125,7 +129,8 @@ function PostEditForm() {
 
       <Form.Group>
         <h3>How to make the dish:</h3>
-        <Form.Label><span className={appStyles.text_cursive}>Please, give some instructions of how to make the dish.</span></Form.Label>
+        <Form.Label><span className={appStyles.text_cursive}>Please, separated every step by a <strong>semicolon ;</strong> (e.g. 1st instruction<strong>; </strong>2nd instruction<strong>; </strong>3rd instruction).</span></Form.Label>
+        <img src={method_list_logo} className="mb-1" alt="Example of how the method will aper on post." width="160" title="Example of how the method will aper on post."/>
         <Form.Control
           as="textarea"
           rows={6}

@@ -23,6 +23,7 @@ const Post = (props) => {
   } = props;
 
   const ingredientsArray = ingredients ? ingredients.split(";") : ['no ingredients listed'];
+  const contentArray = content ? content.split(";") : ['no method written'];
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
@@ -34,10 +35,12 @@ const Post = (props) => {
 
   const handleDelete = async () => {
     try {
-      await axiosRes.delete(`/posts/${id}/`);
-      history.goBack();
+      // await axiosRes.delete(`/posts/${id}/`);
+      await axiosRes.delete(`/recipes/${id}/`);
+      // history.goBack();
+            history.push(`/`);
     } catch (err) {
-      // console.log(err);
+      console.log(err);
     }
   };
 
@@ -115,7 +118,14 @@ const Post = (props) => {
         </details>
         <hr></hr>
         <details><summary className={styles.summary_title}>cooking instructions:</summary>
-          {content && <Card.Text className={styles.cooking_instructions}>{content}</Card.Text>}
+          <ol className={styles.method_list}>
+          {contentArray.map((content) => {
+                return <div key={content}>
+                  <li >{content}</li>
+                  <div className={styles.icon_star}></div>
+                  </div>
+              })}
+          </ol>
         </details>
         <hr></hr>
         <div className={styles.PostBar}>

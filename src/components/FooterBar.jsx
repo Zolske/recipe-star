@@ -21,7 +21,7 @@ const FooterBar = () => {
               rel="noreferrer"
               aria-label="open a new page which leads to facebook"
               href='https://www.facebook.com/'>
-              <i class="fa-brands fa-square-facebook"></i>
+              <i className="fa-brands fa-square-facebook"></i>
             </a>
           </OverlayTrigger>
           {/* instagram ############################################################ */}
@@ -34,7 +34,7 @@ const FooterBar = () => {
               rel="noreferrer"
               aria-label="open a new page which leads to instagram"
               href='https://www.instagram.com/'>
-              <i class="fa-brands fa-square-instagram"></i>
+              <i className="fa-brands fa-square-instagram"></i>
             </a>
           </OverlayTrigger>
           {/* twitter ############################################################ */}
@@ -47,7 +47,7 @@ const FooterBar = () => {
               rel="noreferrer"
               aria-label="open a new page which leads to twitter"
               href='https://www.twitter.com/'>
-              <i class="fa-brands fa-square-twitter"></i>
+              <i className="fa-brands fa-square-twitter"></i>
             </a>
           </OverlayTrigger>
           {/* email ############################################################ */}
@@ -60,7 +60,7 @@ const FooterBar = () => {
               rel="noreferrer"
               aria-label="open your email app to write a email to the Developer"
               href='mailto:zoltan.the.kepes@gmail.com'>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
             </a>
           </OverlayTrigger>
 

@@ -51,6 +51,17 @@ h5 {
 }
 
 .ingredients_list {
-  /* list-style-position: inside; */
   list-style: square inside url("../assets/images/logo/logo_star_bullet.webp");
+}
+
+.method_list{
+  list-style-position: inside;
+}
+
+.icon_star{
+  height: 20px;
+  width: 80px;
+  background-image: url("../assets/images/logo/logo_star_bullet.webp");
+  margin: auto;
+  margin-bottom: 0.5ch;
 }

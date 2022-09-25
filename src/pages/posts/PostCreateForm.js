@@ -8,9 +8,7 @@ import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Image from "react-bootstrap/Image";
 
-import Asset from "../../components/Asset";
-
-import Upload from "../../assets/upload.png";
+import { ImageUploadAsset } from "../../components/Asset";
 
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
@@ -19,6 +17,9 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
+
+import ingredient_list_logo from "../../assets/images/example_ingredient_list.webp";
+import method_list_logo from "../../assets/images/example_method_list.webp";
 
 function PostCreateForm() {
   useRedirect("loggedOut");
@@ -65,7 +66,9 @@ function PostCreateForm() {
       // DELETE const { data } = await axiosReq.post("/posts/", formData);
       // DELETE history.push(`/posts/${data.id}`);
       const { data } = await axiosReq.post("/recipes/", formData);
-      history.push(`/recipes/${data.id}`);
+      // history.push(`/recipes/${data.id}`);
+            history.push(`/posts/${data.id}`);
+      // history.push(`/`);
     } catch (err) {
       // console.log(err);
       if (err.response?.status !== 401) {
@@ -94,7 +97,8 @@ function PostCreateForm() {
 
       <Form.Group>
       <h3>What ingredients do you need:</h3>
-        <Form.Label><span className={appStyles.text_cursive}>Please, list the ingredients needed, separated by a <strong>semicolon ;</strong> (e.g. 1 egg<strong>; </strong>0.5kg butter).</span></Form.Label>
+        <Form.Label><span className={appStyles.text_cursive}>Please, list the ingredients, separated by a <strong>semicolon ;</strong> (e.g. 1 egg<strong>; </strong>0.5kg butter).</span></Form.Label>
+        <img src={ingredient_list_logo} className="mb-1" alt="Example of how the listed ingredients will aper on post." width="160" title="Example of how the listed ingredients will aper on post."/>
         <Form.Control
           as="textarea"
           rows={6}
@@ -111,7 +115,8 @@ function PostCreateForm() {
 
       <Form.Group>
       <h3>How to make the dish:</h3>
-        <Form.Label><span className={appStyles.text_cursive}>Please, give some instructions of how to make the dish.</span></Form.Label>
+        <Form.Label><span className={appStyles.text_cursive}>Please, separated every step by a <strong>semicolon ;</strong> (e.g. 1st instruction<strong>; </strong>2nd instruction<strong>; </strong>3rd instruction).</span></Form.Label>
+        <img src={method_list_logo} className="mb-1" alt="Example of how the method will aper on post." width="160" title="Example of how the method will aper on post."/>
         <Form.Control
           as="textarea"
           rows={6}
@@ -170,8 +175,7 @@ function PostCreateForm() {
                   className="d-flex justify-content-center"
                   htmlFor="image-upload"
                 >
-                  <Asset
-                    // src={Upload}
+                  <ImageUploadAsset
                     message="Click or tap to upload an image"
                   />
                 </Form.Label>
