@@ -91,7 +91,8 @@ function PostEditForm() {
   const textFields = (
     <div className="text-center">
       <Form.Group>
-        <Form.Label>Recipe Title</Form.Label>
+        <h3>Recipe Title</h3>
+        <Form.Label><span className={appStyles.text_cursive}>Please, enter the title of your recipe.</span></Form.Label>
         <Form.Control
           type="text"
           name="title"
@@ -106,7 +107,8 @@ function PostEditForm() {
       ))}
 
       <Form.Group>
-        <Form.Label>What ingredients do you need:</Form.Label>
+        <h3>What ingredients do you need:</h3>
+        <Form.Label><span className={appStyles.text_cursive}>Please, list the ingredients needed, separated by a <strong>semicolon ;</strong> (e.g. 1 egg<strong>; </strong>0.5kg butter).</span></Form.Label>
         <Form.Control
           as="textarea"
           rows={6}
@@ -122,7 +124,8 @@ function PostEditForm() {
       ))}
 
       <Form.Group>
-        <Form.Label>How to make the recipe:</Form.Label>
+        <h3>How to make the dish:</h3>
+        <Form.Label><span className={appStyles.text_cursive}>Please, give some instructions of how to make the dish.</span></Form.Label>
         <Form.Control
           as="textarea"
           rows={6}
@@ -153,9 +156,13 @@ function PostEditForm() {
     <Form onSubmit={handleSubmit}>
       <Row>
         <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
+          <h2>Edit Recipe:</h2>
+          <p>On this page you can make changes to your recipe.</p>
           <Container
             className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
-          >
+            >
+              <h3 className="text-center">You can upload a image of your dish:</h3>
+              <p className={appStyles.text_cursive}>Please, make sure that the image is <strong>NOT larger than 2MB</strong> and does <strong>NOT exceed 4096px</strong> in any direction.</p>
             <Form.Group className="text-center">
               <figure>
                 <Image className={appStyles.Image} src={image} rounded />

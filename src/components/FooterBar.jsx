@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import styles from "../styles/FooterBar.module.css";
-import { OverlayTrigger, Tooltip, Row, Col } from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const FooterBar = () => {
   return (
