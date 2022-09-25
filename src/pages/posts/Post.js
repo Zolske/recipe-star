@@ -169,3 +169,32 @@ const Post = (props) => {
 };
 
 export default Post;
+
+// Make the pie dough:
+// If you are making the pie crust from scratch, make the pie dough at least an hour in advance of making the pie. To make the dough, put the flour, sugar, and salt in a food processor and pulse a couple of times to blend.
+
+// Add half of the butter and pulse several times. Add the rest of the butter and pulse several more times, until the butter pieces are not bigger than the size of a pea.
+
+// Add 2 tablespoons of ice water and pulse a couple of times. Add another tablespoon, and maybe just a teaspoon more if needed, and pulse, just enough so that the dough holds together when you pinch it with your fingers.
+
+// Empty the food processor bowl onto a clean surface and gather the dough into your hands and form a ball. Flatten to a smooth disk about 6 inches wide. Wrap tightly in plastic wrap and chill for 1 hour.;
+// Bake the sweet potatoes:
+// Pierce the sweet potatoes with the tines of a fork in several places.
+
+// Put on a foil lined baking sheet and bake in a 350°F oven for 1 hour, or until cooked through and soft.;
+// Roll out the pie dough, line pie dish, freeze:
+// Remove the dough disk from the refrigerator and let sit for 5 to 10 minutes before rolling it out. Place it on a clean, lightly floured surface. Roll out the dough into a 14-inch round, large enough for a 9-inch pie plate.
+
+// Place on dough on and in the pie dish, turn the edges under and crimp the edges. Poke the bottom of the crust a few times with tines of a fork.
+
+// Place into the freezer to chill.;
+// Mash the cooked sweet potatoes:
+// When the cooked sweet potatoes are cool enough to handle, scoop out the flesh into a bowl. Mash with a potato masher. You should have 2 cups of sweet potato purée.;
+// Beat eggs with sugars, spices, bourbon, sweetened condensed milk:
+// In a separate large bowl, beat the eggs. Whisk in the butter, brown sugar, white sugar, cinnamon, nutmeg, ginger, vanilla extract, bourbon whisky (if using), and sweetened condensed milk.;
+// Combine egg mixture with mashed sweet potatoes, pour into pie shell:
+// Whisk together the egg sugar mixture with the mashed sweet potato until smooth. Pour into the frozen, unbaked pie shell. Smooth surface so that it is even.;
+// Bake:
+// Bake at 350°F for one hour or until the filling has set. Remove from oven and let sit to cool down for 30 minutes or so..
+
+
