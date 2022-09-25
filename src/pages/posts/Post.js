@@ -6,7 +6,6 @@ import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
-import logo from "../../assets/images/logo/logo_star_bullet.webp";
 
 const Post = (props) => {
   const {
@@ -14,15 +13,12 @@ const Post = (props) => {
     owner,
     profile_id,
     profile_image,
-    comments_count,
-    likes_count,
     like_id,
     title,
     ingredients,
     content,
     image,
     updated_at,
-    postPage,
     setPosts,
   } = props;
 
