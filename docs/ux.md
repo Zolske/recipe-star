@@ -43,13 +43,13 @@
 [back to the "Table of Contents"](#table-of-contents)
 ## 4. The Structure
 *Describes the logic and the relational database model.*
-### database model
+### database model:
 *Please, double click to enlarge the image.*  
 ![database_model](./images/database_model.png)
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 5. The Skeleton
-### wireframe
+### wireframe:
 *desktop landing page:*  
 ![desktop wireframe](./images/wireframe_recipe-star_desktop.png)  
 *mobile landing page:*  
@@ -57,5 +57,19 @@
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 6. The Surface
+### color scheme:
+*color platte:*
+![color platte](./images/color-platte_recipe-star.webp)  
+White has been chosen as the background to symbolize a white table cloth. The other colors are chosen because they complement the background color nicely and give a good contrast.
+### typography:
+*title font:*  
+![Emilys Candy](./images/font-Emilys_Candy.webp)  
+**link to Google Fonts ->** [Emailys Candy](https://fonts.google.com/specimen/Emilys+Candy?query=Neapolitan&preview.text=Emilys%20Candy&preview.text_type=custom)  
+The font was designed by Crystal Kluge of Neapolitan. I chose the font because it looks like the kind of writing you would write with icing on a cake. The Site itself is supposed to bring a friendly and light atmosphere across. I believe, the font helps to achieve that.  
+### navigation:  
+*navigation:*  
+![nav bar](./images/navbar.webp) ![nav icons](./images/icons-nav.webp  )  
+The navigation is supposed to be easy and intuitive. Icons help the user to navigate intuitively. I also let the navbar stick, so it is always accessible.
+
 
 ***
