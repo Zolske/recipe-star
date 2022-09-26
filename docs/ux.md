@@ -18,27 +18,42 @@
 4. to interact with other users by writing comments and (un)following there profile
 5. the tools to change or delete recipes and comments
 ### Who is the product for?
-*The audience for the website is:*
+*The audience for the website are:*
 1. as the **owner**, I want that my site is visited and revisited by as many users as possible
-2. as the **user**, I want to have a platform on which I can share easily my recipes and comment
+2. as the **user**, I want to have a platform on which I can share easily my recipes and comments
 3. as a **visitor**, I want to get an idea what the side is about before signing up
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 2. User Stories
-*Please, follow the links to the "Recipe Star" GitHub repository where the user stories have been used to develop the project. The stories served as basis to an "agile" development approach.*
-
+*Please, follow the links to the "Recipe Star" GitHub repository where the user stories have been used to develop the project. The Stories are based on the strategy which defines the purpose and audience of the project. The stories have been prioritized with the "**MoSCoW**" method and have served as the basis to an "agile" development approach.*  
+**user story kanban ->** [progress tracker](https://github.com/users/Zolske/projects/5/views/1)  
+**user story issues ->** [closed issues](https://github.com/Zolske/recipe-star/issues?q=is%3Aissue+is%3Aclosed)
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 3. The Scope
-
+*Contains the features which are based on the "user stories" that are implemented in this release.*  
+### main feature:
+#### **1. CRUD functionality:**
+- user can **c**reate, **r**ead, **u**pdate and **d**elete recipes and comments
+#### **2. authentication:**
+- user can create account which gives only him the ability to...  
+    - change his personal information (*profile picture, username, bio*)
+    - change his recipes and comments  
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 4. The Structure
-
+*Describes the logic and the relational database model.*
+### database model
+*Please, double click to enlarge the image.*  
+![database_model](./images/database_model.png)
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 5. The Skeleton
-
+### wireframe
+*desktop landing page:*  
+![desktop wireframe](./images/wireframe_recipe-star_desktop.png)  
+*mobile landing page:*  
+![mobile wireframe](./images/wireframe_recipe-star_mobile.png)
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 6. The Surface
