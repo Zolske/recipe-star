@@ -166,7 +166,7 @@ function PostEditForm() {
           <Container
             className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
             >
-              <h3 className="text-center">You can upload a image of your dish:</h3>
+              <h3 className="text-center">Please, upload a image for your dish:</h3>
               <p className={appStyles.text_cursive}>Please, make sure that the image is <strong>NOT larger than 2MB</strong> and does <strong>NOT exceed 4096px</strong> in any direction.</p>
             <Form.Group className="text-center">
               <figure>

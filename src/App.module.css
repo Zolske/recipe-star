@@ -3,7 +3,7 @@
     --background-color-content: #A5A150;
     --hover-color-icons: #796F85;
     --hover-color-buttons: #50C9CE;
-    --text-color: #475371;
+    --text-color: #5A5EAF;
 }
 
 
@@ -49,6 +49,7 @@ h2 {
 a {
     color: var(--text-color);
     transition: color ease-in-out 0.3s;
+    font-weight: bold;
 }
 
 a:hover {
