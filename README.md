@@ -13,8 +13,8 @@ The "Recipe Star" is a social media platform which has been designed for its use
 - [Features](#features)
 - [Technologies](#technologies) *(languages, frameworks, library's & tools)*
 - [Development](#development) *(UX & user stories)*
-- Components
-- Testing *(validator & bugs)*
+- [Components](#components)
+- [Testing](#testing) *(validator & bugs)*
 - Setup and Deployment
 - Credits
 ***
@@ -59,9 +59,25 @@ The "Recipe Star" is a social media platform which has been designed for its use
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## Development
-
-
-
+*Please, click the link below to get to the user experience.*  
+**link to user experience ->** [ux documentation](./docs/ux.md)
+***
+[back to the "Table of Contents"](#table-of-contents)
+## Components  
+### most used components
+| component | purpose | used in |
+| --- | --- | --- |
+|[PostsPage](./src/pages/posts/PostsPage.js) | contains the (*recipe*) posts | Home, Feed, Liked (*in [App.js](./src/App.js)*)|
+|[Post](./src/pages/posts/Post.js)| display a single (*recipe*) post|[PostsPage](./src/pages/posts/PostsPage.js)|
+|[Profile](./src/pages/profiles/Profile.js)|display avatar and name of user (*on desktop: a button for following / un-following*) | [PopularProfiles](./src/pages/profiles/PopularProfiles.js)|
+|[MoreDropdown](./src/components/MoreDropdown.js)| symbolized by 3 dots, opens a list of other items (*icons*) which can be clicked on (*linked to*)|[Post](./src/pages/posts/Post.js) [ProfilePage](./src/pages/profiles/ProfilePage.js) [Comment](./src/pages/comments/Comment.js)|
+|[InfiniteScroll](https://www.npmjs.com/package/react-infinite-scroll-component)|when scrolling down, more content is loaded|[PostPage](./src/pages/posts/Post.js) *loading Comment components*, [PostsPage](./src/pages/posts/PostsPage.js) *loading all, feed or liked Post components*, [ProfilePage](./src/pages/profiles/ProfilePage.js) *loading Post components that belong to the profile*
+***
+[back to the "Table of Contents"](#table-of-contents)
+## Testing
+|test|link to test|result|
+| --- | --- | --- |
+|[Nu Html Checker]()
 
 
 

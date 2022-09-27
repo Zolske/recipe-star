@@ -5,7 +5,9 @@
 3. [The Scope](#3-the-scope)
 4. [The Structure](#4-the-structure)
 5. [The Skeleton](#5-the-skeleton)
-6. [The Surface](#6-the-surface)
+6. [The Surface](#6-the-surface)  
+  
+  **link back to "Recipe Star" ->** [README](./../README.md)
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## 1. The Strategy
