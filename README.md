@@ -77,7 +77,8 @@ The "Recipe Star" is a social media platform which has been designed for its use
 ## Testing
 |test|link to test|result|
 | --- | --- | --- |
-|[Nu Html Checker]()
+|Nu Html Checker|[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Frecipe-star.herokuapp.com%2F)|Document checking completed. **No errors or warnings** to show.|
+|
 
 
 
