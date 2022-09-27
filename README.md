@@ -75,13 +75,27 @@ The "Recipe Star" is a social media platform which has been designed for its use
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## Testing
+### validator test
 |test|link to test result|result|
 | --- | --- | --- |
 |Nu Html Checker|[Html result](https://validator.w3.org/nu/?doc=https%3A%2F%2Frecipe-star.herokuapp.com%2F)|Document checking completed. **No errors or warnings** to show.|
 |W3C CSS Validator|[CSS result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frecipe-star.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)|Congratulations! **No Error** Found. ![css gold](./docs/images/css_gold.webp) ![css blue](./docs/images/css_blue.webp)|
+### performance test
+|test|result|
+| --- | --- |
+| Lighthouse Desktop |![lighthouse result desktop](./docs/images/lighthouse_recipe-star_desktop.webp)|
+| Lighthouse Mobile |![lighthouse result mobile](./docs/images/lighthouse_recipe-star_mobile.webp)|  
 
+|lighthouse issues|proposed solution for future updates|
+| --- | --- |
+|*"Image elements do not have explicit width and height"*|the user is uploading the images, no sizes are given, but in a future update, images could be cut to a default size and its size given to the image element.|
+|*"Browser errors were logged to the console"*|when the page is loaded, requests are made to the api, avoid request when page is loaded|  
 
+### browser and mobile tests
+The application works fine on **android mobile** devices and on the **Chrome, Mozilla and Edge**. Because Safari is not working on Windows and the tester could not test the application on it.
 
+### bugs 
+**->** The default css styles are not applied to the backend application "recipe star api" when the admin page is opened.
 
 
 
