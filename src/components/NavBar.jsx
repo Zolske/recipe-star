@@ -1,3 +1,6 @@
+// The code is based on  "Adam Lapinski's" walk-through project "Moments"!
+// https://github.com/Code-Institute-Solutions/moments
+
 import logo from "../assets/images/logo/logo_star_all_long.webp";
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";

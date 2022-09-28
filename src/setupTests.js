@@ -1,3 +1,6 @@
+// The code is based on  "Adam Lapinski's" walk-through project "Moments"!
+// https://github.com/Code-Institute-Solutions/moments
+
 // jest-dom adds custom jest matchers for asserting on DOM nodes.
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)

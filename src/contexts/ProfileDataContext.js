@@ -1,3 +1,6 @@
+// The code is based on  "Adam Lapinski's" walk-through project "Moments"!
+// https://github.com/Code-Institute-Solutions/moments
+
 import { createContext, useContext, useEffect, useState } from "react";
 import { axiosReq, axiosRes } from "../api/axiosDefaults";
 import { useCurrentUser } from "../contexts/CurrentUserContext";

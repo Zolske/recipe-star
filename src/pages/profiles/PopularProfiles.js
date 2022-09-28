@@ -1,3 +1,6 @@
+// The code is based on  "Adam Lapinski's" walk-through project "Moments"!
+// https://github.com/Code-Institute-Solutions/moments
+
 import React from "react";
 import { Container } from "react-bootstrap";
 import appStyles from "../../App.module.css";
