@@ -1,7 +1,0 @@
-// tool tip, needs to be wrapped around item           
-          <OverlayTrigger
-              placement="top"
-              overlay={<Tooltip>...</Tooltip>}
-            >
-
-            </OverlayTrigger>

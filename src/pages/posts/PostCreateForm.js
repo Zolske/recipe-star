@@ -63,12 +63,8 @@ function PostCreateForm() {
     formData.append("image", imageInput.current.files[0]);
 
     try {
-      // DELETE const { data } = await axiosReq.post("/posts/", formData);
-      // DELETE history.push(`/posts/${data.id}`);
       const { data } = await axiosReq.post("/recipes/", formData);
-      // history.push(`/recipes/${data.id}`);
             history.push(`/posts/${data.id}`);
-      // history.push(`/`);
     } catch (err) {
       // console.log(err);
       if (err.response?.status !== 401) {

@@ -1,5 +1,14 @@
 [back to README "Recipe Star" - "Setup & Deployment"](./../README.md#setup-and-deployment)
 # Setup & Deployment
+## Setup "Recipe Star API" (*backend app*)
+
+
+
+
+
+
+
+
 ## Setup "Recipe Star" (*frontend app*)
 1. create a project folder linked to the GitHub repository of the project
 2. run the following command (*from within the project folder*) to create a react app with the dependencies listed in the table below:

@@ -79,10 +79,8 @@ function PostEditForm() {
     }
 
     try {
-      // DELETE await axiosReq.put(`/posts/${id}/`, formData);
       await axiosReq.put(`/recipes/${id}/`, formData);
       history.push(`/posts/${id}`);
-      // history.push(`/recipes/${id}`);
     } catch (err) {
       // console.log(err);
       if (err.response?.status !== 401) {
