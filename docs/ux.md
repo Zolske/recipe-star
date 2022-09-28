@@ -20,7 +20,7 @@
 3. the capability to upload recipes *(picture, title, ingredients, method)*
 4. to interact with other users by writing comments and (un)following there profile
 5. the tools to change or delete recipes and comments
-### Who is the product for?
+### Who is the product for? (Project Goal)
 *The audience for the website are:*
 1. as the **owner**, I want that my site is visited and revisited by as many users as possible
 2. as the **user**, I want to have a platform on which I can share easily my recipes and comments
