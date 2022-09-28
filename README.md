@@ -114,8 +114,4 @@ The "**Recipe Star**" frontend and its backend application "**Recipe Star API**"
 
 **link to the notes I made during the walk-through project ->** 
   [Zoltans_React_essentials_notes](./docs/Zoltans_React_essentials_notes.md)  
-
-My special thanks therefore goes to "**Adam Lapinski's**",  
-  
-**THANK YOU ADAM!!!**
 ***
