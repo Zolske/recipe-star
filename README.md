@@ -111,6 +111,11 @@ The application works fine on **android mobile** devices and on the **Chrome, Mo
 ## Credits
 ### Disclaimer:
 The "**Recipe Star**" frontend and its backend application "**Recipe Star API**" are based on "**Adam Lapinski's**" walk-through project "[**Moments**](https://github.com/Code-Institute-Solutions/moments)".  
+
+**link to the notes I made during the walk-through project ->** 
+  [Zoltans_React_essentials_notes](./docs/Zoltans_React_essentials_notes.md)  
+
 My special thanks therefore goes to "**Adam Lapinski's**",  
   
 **THANK YOU ADAM!!!**
+***
