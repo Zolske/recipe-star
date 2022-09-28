@@ -1,3 +1,4 @@
+[back to README "Recipe Star" - "Development"](./../README.md#development)
 # User Experience (UX)
 ## Table of Contents
 1. [The Strategy](#1-the-strategy)
@@ -72,6 +73,4 @@ The font was designed by Crystal Kluge of Neapolitan. I chose the font because i
 *navigation:*  
 ![nav bar](./images/navbar.webp) ![nav icons](./images/icons-nav.webp  )  
 The navigation is supposed to be easy and intuitive. Icons help the user to navigate intuitively. I also let the navbar stick, so it is always accessible.
-
-
 ***

@@ -15,8 +15,8 @@ The "Recipe Star" is a social media platform which has been designed for its use
 - [Development](#development) *(UX & user stories)*
 - [Components](#components)
 - [Testing](#testing) *(validator & bugs)*
-- Setup and Deployment
-- Credits
+- [Setup and Deployment](#setup-and-deployment)
+- [Credits](#credits)
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## Features
@@ -59,7 +59,7 @@ The "Recipe Star" is a social media platform which has been designed for its use
 ***
 [back to the "Table of Contents"](#table-of-contents)
 ## Development
-*Please, click the link below to get to the user experience.*  
+*Please, click the link below to get to the "User Experience" document.*  
 **link to user experience ->** [ux documentation](./docs/ux.md)
 ***
 [back to the "Table of Contents"](#table-of-contents)
@@ -95,12 +95,25 @@ The "Recipe Star" is a social media platform which has been designed for its use
 ### browser and mobile tests
 The application works fine on **android mobile** devices and on the **Chrome, Mozilla and Edge**. Because Safari is not working on Windows, the tester could not test the application on it.
 
+### manual testing
+*Please, follow the link for the "Manual Testing" document*  
+**manual testing link ->** [manual testing](./docs/manual_testing.md)
+
 ### bugs 
 **->** The default css styles are not applied to the backend application "recipe star api" when the admin page is opened.
-
-
-
-
+***
+[back to the "Table of Contents"](#table-of-contents)
+## Setup and Deployment
+*Please, click the link below to get to the "Setup and Deployment" document.*  
+**link to Setup and Deployment ->** [setup and deployment](./docs/setup_and_deployment.md)
+***
+[back to the "Table of Contents"](#table-of-contents)
+## Credits
+### Disclaimer:
+The "**Recipe Star**" frontend and its backend application "**Recipe Star API**" are based on "**Adam Lapinski's**" walk-through project "[**Moments**](https://github.com/Code-Institute-Solutions/moments)".  
+My special thanks therefore goes to "**Adam Lapinski's**",  
+  
+**THANK YOU ADAM!!!**
 
 
 
