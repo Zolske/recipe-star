@@ -80,6 +80,7 @@ The "Recipe Star" is a social media platform which has been designed for its use
 | --- | --- | --- |
 |Nu Html Checker|[Html result](https://validator.w3.org/nu/?doc=https%3A%2F%2Frecipe-star.herokuapp.com%2F)|Document checking completed. **No errors or warnings** to show.|
 |W3C CSS Validator|[CSS result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frecipe-star.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)|Congratulations! **No Error** Found. ![css gold](./docs/images/css_gold.webp) ![css blue](./docs/images/css_blue.webp)|
+|[Eslint](https://eslint.org/) to check JavaScript and JSX| --- |The extension was used during development in GitPod, there are **no errors** remaining.|
 ### performance test
 |test|result|
 | --- | --- |
@@ -92,7 +93,7 @@ The "Recipe Star" is a social media platform which has been designed for its use
 |*"Browser errors were logged to the console"*|when the page is loaded, requests are made to the api, avoid request when page is loaded|  
 
 ### browser and mobile tests
-The application works fine on **android mobile** devices and on the **Chrome, Mozilla and Edge**. Because Safari is not working on Windows and the tester could not test the application on it.
+The application works fine on **android mobile** devices and on the **Chrome, Mozilla and Edge**. Because Safari is not working on Windows, the tester could not test the application on it.
 
 ### bugs 
 **->** The default css styles are not applied to the backend application "recipe star api" when the admin page is opened.
